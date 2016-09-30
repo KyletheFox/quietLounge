@@ -137,3 +137,29 @@ Java Model Exception: Java Model Status [src/main/java [in springSandbox] does n
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-09-30 13:05:09.407
 !MESSAGE src/main/java [in springSandbox] does not exist
+!SESSION 2016-09-30 13:09:41.618 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/kyleoneill/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge -product org.eclipse.epp.package.jee.product -keyring /Users/kyleoneill/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-09-30 13:09:46.334
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-09-30 13:09:55.880
+!MESSAGE 
+
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+
+
+
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-09-30 13:09:56.051
+!MESSAGE 
+
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+
+
+
