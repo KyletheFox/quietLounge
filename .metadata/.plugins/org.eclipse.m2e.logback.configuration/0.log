@@ -1,0 +1,23 @@
+2016-09-30 12:58:48,517 [Thread-9] ERROR org.eclipse.jgit.util.FS - 
+
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+
+
+
+2016-09-30 12:58:48,614 [Thread-10] ERROR org.eclipse.jgit.util.FS - 
+
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+
+
+
+2016-09-30 12:59:40,712 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/pom.xml.
+2016-09-30 12:59:43,645 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 12:59:43,645 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 12:59:43,645 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 12:59:43,650 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 12:59:43,650 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/test/resources
+2016-09-30 12:59:44,603 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 12:59:44,604 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 12:59:44,604 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 12:59:44,611 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 12:59:44,611 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/test/resources
