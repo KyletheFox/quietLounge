@@ -21,3 +21,19 @@ Agreeing to the Xcode/iOS license requires admin privileges, please re-run as ro
 2016-09-30 12:59:44,604 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
 2016-09-30 12:59:44,611 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-09-30 12:59:44,611 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/test/resources
+2016-09-30 13:02:50,555 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:02:50,556 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 13:02:50,556 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/main/resources
+2016-09-30 13:02:50,558 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:02:50,559 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/springSandbox/src/test/resources
+2016-09-30 13:05:11,625 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-09-30 13:05:13,168 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:05:13,168 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-09-30 13:05:13,168 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-09-30 13:05:13,173 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:05:13,173 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-09-30 13:05:23,699 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:05:23,700 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-09-30 13:05:23,700 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-09-30 13:05:23,703 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-09-30 13:05:23,703 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
