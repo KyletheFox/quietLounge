@@ -1,0 +1,11 @@
+package edu.temple.quietLounge;
+
+public class QuiteLoungeManager {
+	
+	private double latitude;
+	private double longitude;
+	private double soundLevel;
+	
+	
+
+}

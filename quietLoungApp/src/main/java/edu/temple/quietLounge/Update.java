@@ -15,5 +15,4 @@ public class Update {
 	RestTemplate restTemplate = new RestTemplate();
 	String fooResourceUrl = "http://localhost:8080/spring-security-rest-full/foos";
 	ResponseEntity<String> response = restTemplate.getForEntity(fooResourceUrl + "/1", String.class);
-	
 }

@@ -1,0 +1,10 @@
+package edu.temple.quietLounge;
+
+public class successfulResponseData extends responseData {
+
+	public successfulResponseData(boolean success, String message) {
+		super(success, message);
+		// TODO Auto-generated constructor stub
+	}
+
+}

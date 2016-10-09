@@ -1,0 +1,14 @@
+package edu.temple.quietLounge;
+
+public class successfulResponse extends soundData {
+
+	public successfulResponse() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public successfulResponse(double lat, double lng, double soundLevel) {
+		super(lat, lng, soundLevel);
+		// TODO Auto-generated constructor stub
+	}
+
+}

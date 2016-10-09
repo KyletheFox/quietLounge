@@ -1,0 +1,9 @@
+package edu.temple.quietLounge;
+
+public class responseData {
+	private boolean success;
+	private String message;
+	
+	
+	
+}
