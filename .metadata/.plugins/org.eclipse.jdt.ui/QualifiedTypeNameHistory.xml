@@ -7,4 +7,7 @@
 <fullyQualifiedTypeName name="org.json.HTTP"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="edu.temple.quietLounge.SQLDatabaseConnection"/>
+<fullyQualifiedTypeName name="edu.temple.quietLounge.Greeting"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
 </qualifiedTypeNameHistroy>

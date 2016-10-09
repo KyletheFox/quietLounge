@@ -12,9 +12,9 @@ public class SQLDatabaseConnection {
 	private static SQLDatabaseConnection instance = new SQLDatabaseConnection();
 
 	// Database Credentials
-	private static final String url = "jdbc:mysql://localhost:3306/lounge_db";
-	private static final String user = "root"; 
-	private static final String password = "";
+	private static final String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb";
+	private static final String user = "foxy"; 
+	private static final String password = "halobuster1982";
 	
 	private static Connection con; 
 //	private static Statement stmt; 
@@ -27,7 +27,7 @@ public class SQLDatabaseConnection {
 	private void connectToDB() {
 		try { 
 			con = DriverManager.getConnection(url, user, password); 
-			System.out.println(con);
+			//System.out.println(con);
 		}  catch (SQLException sqlEx) { 
 			sqlEx.printStackTrace(); 
 		}
@@ -35,6 +35,10 @@ public class SQLDatabaseConnection {
 	
 	public static SQLDatabaseConnection getInstance() {
 		return instance;
+	}
+
+	public static Connection getCon() {
+		return con;
 	}
 
 }
