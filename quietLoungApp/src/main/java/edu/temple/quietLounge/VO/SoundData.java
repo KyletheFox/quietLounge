@@ -1,15 +1,15 @@
-package edu.temple.quietLounge;
+package edu.temple.quietLounge.VO;
 
-public class soundData {
+public class SoundData {
 	private double lat;
 	private double lng;
 	private double soundLevel;
 	
-	public soundData() {
+	public SoundData() {
 	
 	}
 	
-	public soundData(double lat, double lng, double soundLevel) {
+	public SoundData(double lat, double lng, double soundLevel) {
 		this.lat = lat;
 		this.lng = lng;
 		this.soundLevel = soundLevel;

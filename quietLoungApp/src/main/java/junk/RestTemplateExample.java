@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.temple.quietLounge;
+package junk;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * @author kyleoneill
  *
  */
-public class Update {
+public class RestTemplateExample {
 	
 	RestTemplate restTemplate = new RestTemplate();
 	String fooResourceUrl = "http://localhost:8080/spring-security-rest-full/foos";

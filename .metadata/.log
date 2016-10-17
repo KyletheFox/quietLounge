@@ -2861,3 +2861,229 @@ org.eclipse.core.internal.resources.ResourceException: File not found: /Users/ky
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2016-10-13 11:11:37.948
 !MESSAGE File not found: /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/target/test-classes/edu/temple/quietLounge/test/GreetingControllerTests.class.
+!SESSION 2016-10-16 22:13:44.033 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/TheFoxx/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/TheFoxx/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-16 22:14:25.855
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-16 22:14:40.479
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-16 22:14:40.511
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.378
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.4.0.RELEASE/spring-boot-starter-web-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.380
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-starter/1.4.0.RELEASE/spring-boot-starter-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.380
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot/1.4.0.RELEASE/spring-boot-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.381
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.4.0.RELEASE/spring-boot-autoconfigure-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.382
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.4.0.RELEASE/spring-boot-starter-logging-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.382
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.383
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.384
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.384
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.385
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.386
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.386
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.391
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.415
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.416
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.418
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.1/jackson-databind-2.8.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.418
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.1/jackson-annotations-2.8.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.419
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.1/jackson-core-2.8.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.420
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.422
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.422
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.423
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.424
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.424
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.425
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.4.0.RELEASE/spring-boot-starter-test-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.426
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-test/1.4.0.RELEASE/spring-boot-test-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.426
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/1.4.0.RELEASE/spring-boot-test-autoconfigure-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.427
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/junit/junit/4.12/junit-4.12.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.428
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/assertj/assertj-core/2.5.0/assertj-core-2.5.0.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.428
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.431
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.432
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.433
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.433
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/skyscreamer/jsonassert/1.3.0/jsonassert-1.3.0.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.434
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/json/json/20140107/json-20140107.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.435
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.435
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.436
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.437
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.438
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.439
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.440
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.441
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.4.0.RELEASE/spring-boot-starter-tomcat-1.4.0.RELEASE.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.442
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.4/tomcat-embed-core-8.5.4.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.443
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.4/tomcat-embed-el-8.5.4.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.443
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.4/tomcat-embed-websocket-8.5.4.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-10-16 22:14:48.444
+!MESSAGE Invalid ZIP archive: /Users/kyleoneill/.m2/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-10-16 22:14:58.834
+!MESSAGE Removing part descriptor with the 'com.amazonaws.eclipse.explorer.view' id and the 'AWS Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-10-16 22:14:58.838
+!MESSAGE Removing part descriptor with the 'com.amazonaws.eclipse.ec2.ui.views.AmiBrowserView' id and the 'EC2 AMIs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-10-16 22:14:58.876
+!MESSAGE Removing part descriptor with the 'com.amazonaws.eclipse.ec2.ui.views.InstanceView' id and the 'EC2 Instances' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-10-16 22:14:58.904
+!MESSAGE Removing part descriptor with the 'com.amazonaws.eclipse.ec2.ui.views.ElasticBlockStorageView' id and the 'EC2 Elastic Block Storage' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-10-16 22:14:58.936
+!MESSAGE Removing part descriptor with the 'com.amazonaws.eclipse.ec2.views.SecurityGroupView' id and the 'EC2 Security Groups' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-16 22:23:10.948
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-10-16 22:23:10.948
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-10-16 22:28:21.715
+!MESSAGE import java.sql.* [in <import container> [in [Working copy] IncomingDataRequest.java [in edu.temple.quietLounge [in src/main/java [in quietLoungApp]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-10-16 22:33:47.850
+!MESSAGE import java [in <import container> [in [Working copy] IncomingDataRequest.java [in edu.temple.quietLounge [in src/main/java [in quietLoungApp]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-10-16 22:33:48.010
+!MESSAGE import jav [in <import container> [in [Working copy] IncomingDataRequest.java [in edu.temple.quietLounge [in src/main/java [in quietLoungApp]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-10-16 22:33:48.228
+!MESSAGE import ja [in <import container> [in [Working copy] IncomingDataRequest.java [in edu.temple.quietLounge [in src/main/java [in quietLoungApp]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-10-16 22:33:48.504
+!MESSAGE import j [in <import container> [in [Working copy] IncomingDataRequest.java [in edu.temple.quietLounge [in src/main/java [in quietLoungApp]]]]] does not exist
+
+!ENTRY org.eclipse.egit.core 4 0 2016-10-16 23:06:29.145
+!MESSAGE An exception occurred during push on URI https://github.com/KyletheFox/quietLounge.git: https://github.com/KyletheFox/quietLounge.git: 401 Authorization Required
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/KyletheFox/quietLounge.git: 401 Authorization Required
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:169)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/KyletheFox/quietLounge.git: 401 Authorization Required
+	at org.eclipse.jgit.transport.TransportHttp$Service.openResponse(TransportHttp.java:855)
+	at org.eclipse.jgit.transport.TransportHttp$MultiRequestService.execute(TransportHttp.java:956)
+	at org.eclipse.jgit.transport.TransportHttp$Service$HttpExecuteStream.read(TransportHttp.java:882)
+	at org.eclipse.jgit.util.io.UnionInputStream.read(UnionInputStream.java:145)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.eclipse.jgit.util.io.TimeoutInputStream.read(TimeoutInputStream.java:112)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:247)
+	at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:186)
+	at org.eclipse.jgit.transport.SideBandInputStream.needDataPacket(SideBandInputStream.java:154)
+	at org.eclipse.jgit.transport.SideBandInputStream.read(SideBandInputStream.java:136)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:247)
+	at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:186)
+	at org.eclipse.jgit.transport.PacketLineIn.readString(PacketLineIn.java:138)
+	at org.eclipse.jgit.transport.BasePackPushConnection.readStringLongTimeout(BasePackPushConnection.java:395)
+	at org.eclipse.jgit.transport.BasePackPushConnection.readStatusReport(BasePackPushConnection.java:328)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:203)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:786)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:155)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:167)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:158)
+	... 4 more

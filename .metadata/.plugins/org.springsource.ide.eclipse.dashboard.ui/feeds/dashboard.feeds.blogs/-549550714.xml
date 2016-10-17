@@ -5,7 +5,112 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2016-10-12T22:37:20Z</updated>
+  <updated>2016-10-14T16:58:02Z</updated>
+  <entry>
+    <title>Java DSL for Spring Integration 1.2 Release is available</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/10/14/java-dsl-for-spring-integration-1-2-release-is-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2016-10-14:2656</id>
+    <updated>2016-10-14T16:58:02Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It&amp;#8217;s my pleasure to announce that the Java DSL for Spring Integration &lt;code&gt;1.2 GA&lt;/code&gt; is now available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The artifact &lt;code&gt;org.springframework.integration:spring-integration-java-dsl:1.2.0.RELEASE&lt;/code&gt; is available in the &lt;a href="http://repo.spring.io/release"&gt;Release repo&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cspring-integration-java-dsl"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Since the previous &lt;a href="https://spring.io/blog/2016/09/27/java-dsl-for-spring-integration-1-2-release-candidate-1-is-available"&gt;Release Candidate 1&lt;/a&gt; we have received some feedback and these additional features have been added:&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="thread-barrier-support" class="sect0"&gt;&lt;a class="anchor" href="#thread-barrier-support"&gt;&lt;/a&gt;Thread Barrier support&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A new &lt;code&gt;.barrier()&lt;/code&gt; and its mirror &lt;code&gt;.trigger()&lt;/code&gt; EIP-methods have been added to the &lt;code&gt;IntegrationFlow&lt;/code&gt; definition:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;private static final String BARRIER = "barrier";
+
+@Bean
+public IntegrationFlow barrierFlow() {
+    return f -&amp;gt; f
+        .barrier(10000, b -&amp;gt; b
+                .correlationStrategy(
+                         new HeaderAttributeCorrelationStrategy(BARRIER))
+                 .outputProcessor(g -&amp;gt;
+                         g.getMessages()
+                                 .stream()
+                                 .skip(1)
+                                 .findFirst()
+                                 .get()))
+         .channel(c -&amp;gt; c.queue("barrierResults"));
+}
+
+@Bean
+public IntegrationFlow releaseBarrierFlow(
+                          MessageTriggerAction barrierTriggerAction) {
+    return IntegrationFlows.from((Channels c) -&amp;gt; c.queue("releaseChannel"))
+        .trigger(barrierTriggerAction,
+            e -&amp;gt; e.poller(p -&amp;gt; p.fixedDelay(100)))
+        .get();
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id="poller-code-errorchannel-code" class="sect0"&gt;&lt;a class="anchor" href="#poller-code-errorchannel-code"&gt;&lt;/a&gt;Poller &lt;code&gt;errorChannel&lt;/code&gt;&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A more convenient &lt;code&gt;PollerSpec.errorChannel(String)&lt;/code&gt; has been added after upgrading to Spring Integration &lt;code&gt;4.3.4&lt;/code&gt;.
+We can now specify just the bean name for the &lt;code&gt;errorChannel&lt;/code&gt; on the Poller definition and it will be resolved later when the first &lt;code&gt;ErrorMessage&lt;/code&gt; is sent.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="filesplitter-improvements" class="sect0"&gt;&lt;a class="anchor" href="#filesplitter-improvements"&gt;&lt;/a&gt;FileSplitter improvements&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;SplitterEndpointSpec&lt;/code&gt; now provides a &lt;code&gt;delimiters()&lt;/code&gt; option which is mapped to the &lt;code&gt;DefaultMessageSplitter.setDelimiters()&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can find all of the features introduced in version &lt;code&gt;1.2&lt;/code&gt; in the blog posts announcing previous Milestone releases:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2016/07/08/java-dsl-for-spring-integration-1-2-m1-and-1-1-3-are-available"&gt;Milestone 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2016/09/15/java-dsl-for-spring-integration-1-2-milestone-2-is-available"&gt;Milestone 2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spring.io/blog/2016/09/27/java-dsl-for-spring-integration-1-2-release-candidate-1-is-available"&gt;Release Candidate 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h1 id="next-steps" class="sect0"&gt;&lt;a class="anchor" href="#next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring Integration Java DSL project is moving to the &lt;a href="http://projects.spring.io/spring-integration/"&gt;Spring Integration Core&lt;/a&gt; &lt;code&gt;5.0&lt;/code&gt; and Java 8 code base.
+Version &lt;code&gt;1.2.x&lt;/code&gt; will remain in support for bug fixes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A big thanks to everyone from the community for feedback that has been provided.
+Without you we wouldn&amp;#8217;t have such a good comprehensive product!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/wiki/Spring-Integration-Java-DSL-Reference"&gt;Documentation&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-integration"&gt;Chat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: A gentle introduction to Spring Integration</title>
+    <link rel="alternate" href="https://spring.io/blog/2016/10/13/spring-tips-a-gentle-introduction-to-spring-integration" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2016-10-13:2655</id>
+    <updated>2016-10-13T18:27:23Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="https://www.twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi Spring fans! In this tip, we&amp;rsquo;ll look at enterprise application integration with Spring Integration and the Spring Integration Java Config DSL.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/MTKlk8_9aAw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Task 1.1.0.M2 is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2016/10/12/spring-cloud-task-1-1-0-m2-is-now-available" />
@@ -61,9 +166,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Including the &lt;code&gt;spring-data-geode&lt;/code&gt; dependency will transitively pull in all required Apache Geode artifacts so you can start building Spring applications that use Apache Geode today.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new" class="anchor" name="what-rsquo-s-new"&gt;&lt;/a&gt;What&amp;rsquo;s New&lt;/h2&gt;
 &lt;p&gt;While not much functionally changed between Apache Geode M2 and M3 (mainly &lt;a href="https://cwiki.apache.org/confluence/display/GEODE/1.0.0-incubating.M3+Release"&gt;bug fixes&lt;/a&gt;), many things did &lt;a href="https://github.com/spring-projects/spring-data-gemfire/blob/1.0.0.APACHE-GEODE-INCUBATING-M3/src/main/resources/changelog.txt#L7-L52"&gt;change&lt;/a&gt; in &lt;em&gt;Spring Data Geode&lt;/em&gt;. One key feature stands above all the rest.&lt;/p&gt;&lt;h2&gt;&lt;a href="#setting-the-stage" class="anchor" name="setting-the-stage"&gt;&lt;/a&gt;Setting the Stage&lt;/h2&gt;
-&lt;p&gt;For too long, &lt;a href="http://geode.incubator.apache.org/"&gt;Apache Geode&lt;/a&gt; (originating from &lt;a href="https://pivotal.io/big-data/pivotal-gemfire"&gt;Pivotal GemFire&lt;/a&gt;) has been overly complicated to configure and use properly, making it difficult for users to get up and running as quickly, and as easily as possible. To gain more insight into the problem, checkout my talk in the August, &lt;a href="https://www.youtube.com/watch?v=6SdNawIJi_c&amp;feature=youtu.be"&gt;Apache Geode Clubhouse Meeting&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;While Apache Geode (and by extension, Pivotal GemFire) has much stronger consistency guarantees, and often times, better performance, it is hard to compete with the simplicity and &lt;em&gt;out-of-box&lt;/em&gt; experience with some of the alternatives (&lt;a href="https://hazelcast.org/"&gt;for instance&lt;/a&gt;), especially when they are good enough in a majority of the use cases.&lt;/p&gt;
-&lt;p&gt;Simplicity will beat flexibility and performance nearly every, single, time; Just ask developers. You can tune for performance many different ways, but no amount of application code is going to make it any simpler to do. Less is more.&lt;/p&gt;&lt;h2&gt;&lt;a href="#problem-solution" class="anchor" name="problem-solution"&gt;&lt;/a&gt;Problem/Solution&lt;/h2&gt;
+&lt;p&gt;Because the focus of &lt;a href="http://geode.incubator.apache.org/"&gt;Apache Geode&lt;/a&gt; (and by extension, &lt;a href="https://pivotal.io/big-data/pivotal-gemfire"&gt;Pivotal GemFire&lt;/a&gt;) has always been to provide enough functional breadth and flexibility to address a wide array of &lt;a href="https://pivotal.io/big-data/pivotal-gemfire"&gt;complex customer requirements and use cases&lt;/a&gt; (click &amp;ldquo;&lt;em&gt;Use Cases&lt;/em&gt;&amp;rdquo;), it has made it difficult for users to get up and running as quickly, and as easily as possible. And, though it has much stronger consistency guarantees, and often times, better performance, it is hard to compete with the &lt;em&gt;out-of-box&lt;/em&gt; experience when using alternative, comparable solutions.&lt;/p&gt;
+&lt;p&gt;To gain more insight into the problem along with how we are focused on resolving it for Apache Geode and Pivotal GemFire, checkout my talk in the August, &lt;a href="https://www.youtube.com/watch?v=6SdNawIJi_c&amp;feature=youtu.be"&gt;Apache Geode Clubhouse Meeting&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#problem-solution" class="anchor" name="problem-solution"&gt;&lt;/a&gt;Problem/Solution&lt;/h2&gt;
 &lt;p&gt;The problem has been rooted in the fact that Apache Geode has lacked an opinionated and consistent programming/configuration model, particularly for application development. So really, we don&amp;rsquo;t need to look any further than the &lt;a href="http://projects.spring.io/spring-framework/"&gt;Spring Framework&lt;/a&gt;. However, that still leaves &amp;ldquo;opinion&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Once again, Spring gives us &lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt;, and what a beautiful piece of engineering it is, so elegant, so simple. And, as you will see below, it has truly been an inspiration for the work on &lt;em&gt;Spring Data Geode&lt;/em&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#shut-up-and-show-me-ldquo-the-code-rdquo-hellip" class="anchor" name="shut-up-and-show-me-ldquo-the-code-rdquo-hellip"&gt;&lt;/a&gt;Shut Up and Show Me &amp;ldquo;The Code&amp;rdquo;&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;In the past, Spring developers had to configure Geode with either &lt;a href="https://github.com/jxblum/contacts-application/blob/master/configuration-example/src/test/resources/example/config/spring/xml/HazelcastApiExampleTests-context.xml"&gt;XML&lt;/a&gt;, or &lt;a href="https://github.com/jxblum/contacts-application/blob/master/configuration-example/src/test/java/example/config/spring/java/HazelcastApiExampleTests.java#L62-L79"&gt;Java config&lt;/a&gt;, and then use a bootstrapping mechanism, like &lt;a href="http://geode.docs.pivotal.io/docs/tools_modules/gfsh/command-pages/start.html#topic_3764EE2DB18B4AE4A625E0354471738A"&gt;&lt;em&gt;Gfsh&lt;/em&gt;&lt;/a&gt;, or &lt;em&gt;Spring Boot&lt;/em&gt;, to get up and running. This has even been demonstrated in the &lt;a href="https://spring.io/guides/gs/accessing-data-gemfire/"&gt;guides&lt;/a&gt;. Neither one was really a significant advantage over the other until now.&lt;/p&gt;
@@ -746,40 +850,5 @@ dependencies {&#xD;
     <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Rossen Stoyanchev&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-mvc-4-web-apps"&gt;http://www.slideshare.net/SpringCentral/spring-mvc-4-web-apps&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Framework 4.3 is the last in the 4.x generation and it brings plenty of refinements to the @MVC programming model. In Spring Framework 5.0 the same programming model will be supported on a new reactive foundation. This talk will review the main features in 4.x and preview the work towards Spring Framework 5.0.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6Y1dwidNJPQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay: Cloud Native Java with Spring Cloud Services</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/26/springone-platform-2016-replay-cloud-native-java-with-spring-cloud-services" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2016-09-26:2636</id>
-    <updated>2016-09-26T11:08:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speakers: Craig Walls; Spring Social Lead, Pivotal. Roy Clarkson; Spring Mobile Lead, Pivotal.&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/Pivotal/cloud-native-java-with-spring-cloud-services-64888067"&gt;http://www.slideshare.net/Pivotal/cloud-native-java-with-spring-cloud-services-64888067&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Developing cloud native applications presents several challenges. How do microservices discover each other? How do you configure them? How can you make them resilient to failure? How can you monitor the health of each microservice? &lt;/p&gt;
-&lt;p&gt;Spring Cloud addresses all of these concerns. Even so, you still must explicitly develop your own discovery server, configuration server, and circuit breaker dashboard for monitoring the circuit breakers in each microservice. &lt;/p&gt;
-&lt;p&gt;Spring Cloud Services for Pivotal Cloud Foundry picks up where Spring Cloud leaves off, offering a discovery server, configuration server, and Hystrix dashboard as services that can be bound to applications deployed in Pivotal Cloud Foundry, leaving you to focus on developing the services that drive your application. In this talk, we will introduce the capabilities provided by Spring Cloud Services and demonstrate how it makes simple work of deploying cloud native applications to Cloud Foundry.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3dcTqJYAXUk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Data Flow for Apache Mesos 1.0 GA released</title>
-    <link rel="alternate" href="https://spring.io/blog/2016/09/26/spring-cloud-data-flow-for-apache-mesos-1-0-ga-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Thomas Risberg</name>
-    </author>
-    <id>tag:spring.io,2016-09-23:2633</id>
-    <updated>2016-09-26T10:03:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I am excited to announce the General Availability of Spring Cloud Data Flow for Apache Mesos 1.0. &lt;/p&gt;
-&lt;p&gt;Spring Cloud Data Flow for Apache Mesos provides support for orchestrating long-running (streaming) and short-lived (task/batch) data microservices on Apache Mesos. We launch stream apps using Application Groups on Marathon and tasks as Chronos one-time jobs. The release includes a template JSON script for deploying the Spring Cloud Data Flow server on Marathon. We also include sample scripts for deploying Redis, MySQL and Rabbit MQ on Marathon to be used for testing a complete deployment. In addition to running on an Apache Mesos cluster, we also support running on a Mesosphere DC/OS cluster.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; A great way to start using this new release is to follow the &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/#spring-cloud-data-flow-server-implementations"&gt;release matrix&lt;/a&gt; on the project page, which includes the download coordinates and the links to the reference guide.&lt;/p&gt;
-&lt;p&gt;Changes since the previous 1.0 RC2 release:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Adds configuration support for “authorization token” for secured access to Marathon and Chronos REST APIs on an OAuth enabled DC/OS cluster&lt;/li&gt;
-  &lt;li&gt;Builds upon Spring Cloud Data Flow 1.0.1.RELEASE and Spring Cloud Deployer for Apache Mesos 1.0.4.RELEASE&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To get started using Spring Cloud Data Flow for Apache Mesos &lt;a href="http://docs.spring.io/spring-cloud-dataflow-server-mesos/docs/1.0.0.RELEASE/reference/htmlsingle/#_getting_started"&gt;follow the steps&lt;/a&gt; outlined in the reference documentation.&lt;/p&gt;&lt;h2&gt;&lt;a href="#upcoming-webinar" class="anchor" name="upcoming-webinar"&gt;&lt;/a&gt;Upcoming webinar&lt;/h2&gt;
-&lt;p&gt;Tune-in to “&lt;a href="https://spring.io/blog/2016/09/13/webinar-data-microservices-in-the-cloud"&gt;Data Microservices in the Cloud&lt;/a&gt;” webinar scheduled on 9/29/2016 to learn more about Spring Cloud Data Flow and the latest improvements.&lt;/p&gt;</content>
   </entry>
 </feed>

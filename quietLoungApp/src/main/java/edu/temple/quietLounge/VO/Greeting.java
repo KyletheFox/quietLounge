@@ -1,4 +1,4 @@
-package edu.temple.quietLounge;
+package edu.temple.quietLounge.VO;
 
 public class Greeting {
 

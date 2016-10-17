@@ -1288,3 +1288,223 @@ java.lang.NullPointerException: null
 2016-10-13 11:34:56,212 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
 2016-10-13 11:38:56,112 [Worker-41] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
 2016-10-13 11:38:56,112 [Worker-41] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-16 22:15:16,422 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-10-16 22:15:18,433 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-10-16 22:15:18,541 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-10-16 22:15:18,631 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar
+2016-10-16 22:15:19,217 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar
+2016-10-16 22:15:26,829 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:15:26,829 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:15:26,829 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:15:26,834 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:15:26,834 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:15:27,077 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-16 22:15:27,078 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-16 22:15:27,088 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:15:31,750 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:15:31,750 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:15:31,750 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:15:31,755 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:15:31,755 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:18:31,253 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:18:31,254 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:18:31,254 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:18:31,257 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:18:31,257 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:18:51,840 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-16 22:18:51,842 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-16 22:18:52,531 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:18:52,532 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:18:52,532 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:18:52,534 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:18:52,535 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:23:11,991 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:23:11,991 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:23:11,991 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:23:11,994 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:23:11,994 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:25:02,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:25:02,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:25:02,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:25:02,605 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:25:02,606 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:25:03,637 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:25:03,637 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:25:03,637 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:25:03,640 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:25:03,640 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:40:21,152 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:40:21,152 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:40:21,152 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:40:21,155 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:40:21,155 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:43:38,402 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:43:38,403 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:43:38,403 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:43:38,405 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:43:38,406 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:44:23,650 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:44:23,651 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:44:23,651 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:44:23,654 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:44:23,654 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:44:44,302 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:44:44,302 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:44:44,302 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:44:44,306 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:44:44,306 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:46:41,114 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:46:41,114 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:46:41,115 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:46:41,118 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:46:41,118 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:47:16,492 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:47:16,493 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:47:16,493 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:47:16,497 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:47:16,497 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:48:37,715 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:48:37,715 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:48:37,716 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:48:37,718 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:48:37,719 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:49:26,746 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:49:26,746 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:49:26,746 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:49:26,750 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:49:26,751 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:50:39,458 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:50:39,459 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:50:39,459 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:50:39,466 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:50:39,466 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:51:41,380 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:51:41,380 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:51:41,380 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:51:41,383 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:51:41,383 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:52:19,558 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:52:19,558 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:52:19,558 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:52:19,564 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:52:19,564 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:52:19,564 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-16 22:52:19,565 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-16 22:52:19,572 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:52:44,545 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:52:44,545 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:52:44,545 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:52:44,548 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:52:44,548 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:53:10,600 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:10,601 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:10,601 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:10,604 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:10,604 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:53:29,412 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:29,412 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:29,412 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:29,414 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:29,415 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:53:35,528 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:35,528 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:35,528 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:35,530 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:35,531 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:53:57,858 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:57,858 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:57,858 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:53:57,899 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:53:57,900 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:54:27,842 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:54:27,842 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:54:27,842 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:54:27,845 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:54:27,845 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:55:20,560 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:55:20,560 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:55:20,560 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:55:20,563 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:55:20,563 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:55:34,630 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:55:34,630 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:55:34,630 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:55:34,634 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:55:34,634 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:56:13,443 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:13,443 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:13,443 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:13,446 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:13,446 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:56:25,676 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:25,677 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:25,677 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:25,679 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:25,679 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:56:48,762 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:48,762 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:48,763 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:56:48,765 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:56:48,765 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:57:08,450 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:08,451 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:08,451 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:08,453 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:08,453 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:57:40,628 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:40,628 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:40,629 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:40,631 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:40,631 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:57:41,948 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:41,948 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:41,948 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:41,952 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:41,952 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:57:42,976 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:42,977 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:42,977 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:42,979 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:42,980 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:57:51,157 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:51,157 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:51,157 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:57:51,161 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:57:51,161 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:58:04,462 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:58:04,463 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:58:04,463 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:58:04,466 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:58:04,466 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:58:17,023 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:58:17,024 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:58:17,024 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:58:17,027 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:58:17,027 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:59:07,012 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:07,012 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:07,012 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:07,014 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:07,014 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:59:19,377 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:19,378 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:19,378 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:19,381 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:19,381 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 22:59:26,691 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:26,691 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:26,692 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 22:59:26,695 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 22:59:26,695 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 23:00:19,565 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-16 23:00:19,566 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-16 23:01:58,582 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 23:01:58,583 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 23:01:58,583 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-16 23:01:58,585 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 23:01:58,585 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-16 23:01:58,585 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-16 23:01:58,585 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-16 23:01:58,591 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-16 23:02:16,572 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-16 23:02:16,573 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install

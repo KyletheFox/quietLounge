@@ -1,4 +1,4 @@
-package edu.temple.quietLounge;
+package junk;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
