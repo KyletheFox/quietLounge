@@ -26,6 +26,7 @@ public class SQLDatabaseConnection {
 	
 	private void connectToDB() {
 		try { 
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver ());
 			con = DriverManager.getConnection(url, user, password); 
 			//System.out.println(con);
 		}  catch (SQLException sqlEx) { 

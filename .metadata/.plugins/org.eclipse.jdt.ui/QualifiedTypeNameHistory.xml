@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="edu.temple.quietLounge.Greeting"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+<fullyQualifiedTypeName name="org.springframework.util.Assert"/>
 </qualifiedTypeNameHistroy>

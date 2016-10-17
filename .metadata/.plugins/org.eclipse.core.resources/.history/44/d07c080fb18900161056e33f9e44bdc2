@@ -1,6 +1,0 @@
-package edu.temple.quietLounge;
-
-public interface responseData {
-	boolean success;
-	
-}

@@ -37,11 +37,10 @@ public class QuietLoungeControler {
         String sql = "CREATE TABLE " + sound +
                 "(id INTEGER not NULL)";
         
-        System.out.println(sql);
+        System.out.println(con.toString());
         
         try {
 			stmt = con.createStatement();
-			
 			stmt.executeUpdate(sql);
 			return "Created new Table named: " + sound;
 		} catch (SQLException e) {

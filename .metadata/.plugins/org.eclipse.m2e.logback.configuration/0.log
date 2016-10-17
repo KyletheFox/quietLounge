@@ -1145,3 +1145,146 @@ java.lang.NullPointerException: null
 2016-10-09 00:10:01,770 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
 2016-10-09 00:10:01,777 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-10-09 00:10:01,778 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/TheFoxx/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-10 15:23:39,367 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-10-10 15:23:44,083 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-10 15:23:44,084 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-10 15:23:44,084 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-10 15:23:44,090 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-10 15:23:44,090 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-10 15:46:46,762 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-10 15:46:46,762 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-10 15:46:46,762 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-10 15:46:46,765 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-10 15:46:46,766 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-12 17:47:24,062 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-12 17:47:24,067 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-12 17:47:24,068 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-12 17:47:24,073 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-12 17:47:24,073 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-12 21:31:54,936 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-12 21:31:54,941 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-12 21:31:54,941 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-12 21:31:54,945 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-12 21:31:54,945 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:32:30,980 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:32:30,988 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:32:30,988 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:32:30,992 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:32:30,992 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:32:52,890 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:32:52,902 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 10:36:54,122 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-10-13 10:37:10,086 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:37:10,087 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 10:39:13,107 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:39:13,107 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 10:41:29,429 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:41:29,429 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 10:52:29,197 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:29,198 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:29,198 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:29,201 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:29,201 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:52:30,243 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:30,244 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:30,244 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:30,246 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:30,246 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:52:48,128 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-13 10:52:49,131 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-10-13 10:52:51,276 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /quietLoungApp/src/main/java
+2016-10-13 10:52:51,277 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /quietLoungApp/src/test/java
+2016-10-13 10:52:52,283 [Worker-33] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for quietLoungApp
+2016-10-13 10:52:52,296 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2016-10-13 10:52:54,272 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:54,272 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:54,272 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:52:54,275 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:52:54,276 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:52:54,276 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-13 10:52:54,279 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-13 10:52:54,291 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:26,909 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-10-13 10:53:49,281 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:53:49,281 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 10:53:50,310 [Worker-36] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-10-13 10:53:51,368 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-10-13 10:53:51,451 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.pom
+2016-10-13 10:53:51,533 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar
+2016-10-13 10:53:51,865 [Worker-36] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar
+2016-10-13 10:53:54,021 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:54,021 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:54,021 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:54,034 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:54,034 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:53:54,035 [Worker-36] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-13 10:53:54,035 [Worker-36] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-13 10:53:54,049 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:58,011 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:58,011 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:58,011 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:58,016 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:58,016 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:53:59,043 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:59,043 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:59,043 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:53:59,046 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:53:59,046 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:54:41,623 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:54:41,624 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:54:41,624 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:54:41,627 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:54:41,627 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 10:54:41,627 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-13 10:54:41,627 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-13 10:54:41,634 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:54:52,574 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-10-13 10:55:09,736 [Worker-31] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 10:55:09,737 [Worker-31] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests clean install
+2016-10-13 10:55:54,475 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:55:54,475 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:55:54,475 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 10:55:54,478 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 10:55:54,478 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:09:14,617 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:09:14,619 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:09:14,619 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:09:14,621 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:09:14,621 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:09:32,660 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:09:32,660 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:09:32,660 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:09:32,669 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:09:32,669 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:11:16,788 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 11:11:16,789 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -Dmaven.test.skip=true -DskipTests clean install
+2016-10-13 11:11:38,577 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:11:38,578 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:11:38,578 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:11:38,580 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:11:38,581 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:11:51,676 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 11:11:51,677 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 11:13:45,033 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:13:45,033 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:13:45,033 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:13:45,036 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:13:45,036 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:13:58,243 [Worker-46] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 11:13:58,243 [Worker-46] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2016-10-13 11:22:33,460 [Worker-51] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework:gs-rest-service:0.1.0 @ /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/pom.xml.
+2016-10-13 11:22:34,863 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:22:34,863 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:22:34,863 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:22:34,867 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:22:34,867 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:22:34,868 [Worker-51] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of quietLoungApp
+2016-10-13 11:22:34,868 [Worker-51] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for quietLoungApp
+2016-10-13 11:22:34,874 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:34:56,209 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:34:56,209 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:34:56,210 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/main/resources
+2016-10-13 11:34:56,211 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-10-13 11:34:56,212 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp/src/test/resources
+2016-10-13 11:38:56,112 [Worker-41] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/kyleoneill/Documents/TempleF16/SoftwareDesign/quietLounge/quietLoungApp
+2016-10-13 11:38:56,112 [Worker-41] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
