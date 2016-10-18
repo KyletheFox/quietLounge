@@ -1,10 +1,12 @@
 package edu.temple.quietLounge;
 
+import com.mysql.jdbc.Driver;
 import java.sql.Connection; 
 import java.sql.DriverManager; 
-import java.sql.ResultSet; 
-import java.sql.SQLException; 
-import java.sql.Statement;
+import java.sql.SQLException;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory; 
 
 public class SQLDatabaseConnection {
 	
@@ -16,9 +18,11 @@ public class SQLDatabaseConnection {
 	private static final String user = "foxy"; 
 	private static final String password = "halobuster1982";
 	
+	// The connection to MySQL Database
 	private static Connection con; 
-//	private static Statement stmt; 
-//	private static ResultSet rs;
+	
+	// Create Logger object
+	private Log log = LogFactory.getLog(SQLDatabaseConnection.class);
 	
 	private SQLDatabaseConnection() {
 		connectToDB();
@@ -26,9 +30,9 @@ public class SQLDatabaseConnection {
 	
 	private void connectToDB() {
 		try { 
-			DriverManager.registerDriver(new com.mysql.jdbc.Driver ());
+			DriverManager.registerDriver(new Driver ());
 			con = DriverManager.getConnection(url, user, password); 
-			//System.out.println(con);
+			log.info("Connecting to Database: Successfully Connected");
 		}  catch (SQLException sqlEx) { 
 			sqlEx.printStackTrace(); 
 		}

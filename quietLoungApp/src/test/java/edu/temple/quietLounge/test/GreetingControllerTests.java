@@ -20,6 +20,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +31,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.Assert;
+
+import com.mysql.jdbc.Driver;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -55,6 +60,19 @@ public class GreetingControllerTests {
         this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
+    }
+    
+    @Test
+    public void checkDatabaseConnection() throws Exception {
+    	String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb";
+    	String user = "foxy"; 
+    	String password = "halobuster1982";
+    	Connection con; 
+    	
+    	DriverManager.registerDriver(new Driver ());
+		con = DriverManager.getConnection(url, user, password); 
+		
+		Assert.notNull(con);    	
     }
 
 }

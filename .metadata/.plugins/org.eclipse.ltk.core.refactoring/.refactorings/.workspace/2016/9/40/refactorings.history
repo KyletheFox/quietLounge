@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;springSandbox&apos; to &apos;quietLoungApp&apos;" description="Rename resource &apos;springSandbox&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/springSandbox" name="quietLoungApp" stamp="1475255109566" updateReferences="true"/>
-</session>
