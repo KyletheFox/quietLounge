@@ -9,18 +9,21 @@ import java.util.ArrayList;
 import edu.temple.quietLounge.SQLDatabaseConnection;
 import edu.temple.quietLounge.VO.Lounge;
 
-public class LoungeCoordinates extends ArrayList<Lounge>{
+public class TrackedLoungeData extends ArrayList<Lounge>{
 	
 	private static final long serialVersionUID = 1L;
 	private final int DEFAULT_MAX = 50;
-	private int maxLounges;
 	
-	public LoungeCoordinates() {
+	@SuppressWarnings("unused")	
+	private int maxLounges;
+	// TODO Implement To Get Max Number of Lounges in Response
+	
+	public TrackedLoungeData() {
 		this.maxLounges = this.DEFAULT_MAX;
 		pullAllLoungeCoords();
 	}
 	
-	public LoungeCoordinates(int maxLounges) {
+	public TrackedLoungeData(int maxLounges) {
 		this.maxLounges = maxLounges;
 		pullAllLoungeCoords();
 	}

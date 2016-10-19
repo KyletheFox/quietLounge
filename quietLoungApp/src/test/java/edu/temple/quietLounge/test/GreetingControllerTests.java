@@ -16,7 +16,9 @@
 package edu.temple.quietLounge.test;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -30,6 +32,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.util.Assert;
 
 import com.mysql.jdbc.Driver;
@@ -39,28 +42,57 @@ import com.mysql.jdbc.Driver;
 @AutoConfigureMockMvc
 public class GreetingControllerTests {
 	
+	@Autowired
+    private MockMvc mockMvc;
+	
 	@Test
 	public void simpleTest() throws Exception {
 		Assert.isTrue(true);
 	}
+	
+	@Test
+	public void callControllerThatDoesntExist() throws Exception {
+		this.mockMvc.perform(get("/THIS_IS_NO_A_CONTROLLER")).andExpect(status().is4xxClientError());
+	}
+	
+	@Test
+	public void pingShouldRetrunMessage() throws Exception {
+		this.mockMvc.perform(get("/ping")).andDo(print()).andExpect(status().isOk())
+					.andExpect(content().string("ping you"));
+	}
+	
+	@Test
+	public void invalidParamLatInputSoundData() throws Exception {
+		this.mockMvc.perform(post("/inputSound").param("lat", "SHOULD_BE_NUMBER").param("lng", "0").param("sound", "0"))
+				.andExpect(status().isOk()).andExpect(jsonPath("$.responseSuccess").value(false));
+	}
+	
+	@Test
+	public void invalidParamLngInputSoundData() throws Exception {
+		this.mockMvc.perform(post("/inputSound").param("lat", "0").param("lng", "SHOULD_BE_NUMBER").param("sound", "0"))
+				.andExpect(status().isOk()).andExpect(jsonPath("$.responseSuccess").value(false));
+	}
+	
+	@Test
+	public void invalidParamSoundInputSoundData() throws Exception {
+		this.mockMvc.perform(post("/inputSound").param("lat", "0").param("lng", "0").param("sound", "SHOULD_BE_NUMBER"))
+				.andExpect(status().isOk()).andExpect(jsonPath("$.responseSuccess").value(false));
+	}
 
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Test
-    public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
-
-        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, World!"));
-    }
-
-    @Test
-    public void paramGreetingShouldReturnTailoredMessage() throws Exception {
-
-        this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
-                .andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
-    }
+//    @Test
+//    public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
+//
+//        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
+//                .andExpect(jsonPath("$.content").value("Hello, World!"));
+//    }
+//
+//    @Test
+//    public void paramGreetingShouldReturnTailoredMessage() throws Exception {
+//
+//        this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
+//                .andDo(print()).andExpect(status().isOk())
+//                .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
+//    }
     
     @Test
     public void checkDatabaseConnection() throws Exception {

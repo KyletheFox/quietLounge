@@ -1,4 +1,4 @@
-package edu.temple.quietLounge.ResponseObjs;
+package edu.temple.quietLounge.VO;
 
 public class SuccessfulDataUpdateResponse extends DataUpdateResponse {
 

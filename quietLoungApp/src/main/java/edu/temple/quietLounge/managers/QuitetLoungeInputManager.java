@@ -1,4 +1,4 @@
-package edu.temple.quietLounge;
+package edu.temple.quietLounge.managers;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -8,33 +8,33 @@ import java.util.Iterator;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import edu.temple.quietLounge.DAO.LoungeCoordinates;
-import edu.temple.quietLounge.ResponseObjs.DataUpdateResponse;
-import edu.temple.quietLounge.ResponseObjs.FailureDataUpdateResponse;
-import edu.temple.quietLounge.ResponseObjs.SuccessfulDataUpdateResponse;
+import edu.temple.quietLounge.SQLDatabaseConnection;
+import edu.temple.quietLounge.DAO.TrackedLoungeData;
+import edu.temple.quietLounge.VO.DataUpdateResponse;
+import edu.temple.quietLounge.VO.FailureDataUpdateResponse;
 import edu.temple.quietLounge.VO.Lounge;
+import edu.temple.quietLounge.VO.SoundData;
+import edu.temple.quietLounge.VO.SuccessfulDataUpdateResponse;
 
 public class QuitetLoungeInputManager {
 	
-	private double latitude;
-	private double longitude;
-	private double soundLevel;
-	
-	private LoungeCoordinates loungeCoords;
+	private SoundData soundData;
+	private DataUpdateResponse dataUpdateResponse;
+	private TrackedLoungeData loungeCoords;
 	private Log log = LogFactory.getLog(this.getClass());
 	
 	public QuitetLoungeInputManager() {
-		this.loungeCoords = new LoungeCoordinates();
+		this.loungeCoords = new TrackedLoungeData();
+		this.dataUpdateResponse = null;
 	}
 	
-	public QuitetLoungeInputManager(double latitude, double longitude, double soundLevel) {
-		this.latitude = latitude;
-		this.longitude = longitude;
-		this.soundLevel = soundLevel;
-		this.loungeCoords = new LoungeCoordinates();
+	public QuitetLoungeInputManager(SoundData soundData) {
+		this.soundData = soundData;
+		this.loungeCoords = new TrackedLoungeData();
+		this.dataUpdateResponse = null;
 	}
 	
-	public DataUpdateResponse insertNewSoundData() {
+	public void insertNewSoundData() {
 		
 		Lounge tmp;
 		
@@ -67,26 +67,26 @@ public class QuitetLoungeInputManager {
 				}
 		        
 				// Return Successful update
-				return new SuccessfulDataUpdateResponse();
+				this.dataUpdateResponse = new SuccessfulDataUpdateResponse();
 			}
 		}
 		
 		log.info("No Louges Found in Range");
-		return new FailureDataUpdateResponse("Out of Range");
+		this.dataUpdateResponse = new FailureDataUpdateResponse("Out of Range");
 	}
 	
 	private String insertQueryFactory(Lounge lounge) {
 		return "INSERT INTO " + lounge.getName() + " (Latitude, Longitude, SoundReading) " +
-					"VALUES (" + this.latitude + ", " + this.longitude + ", " +
-					this.soundLevel + ")";
+					"VALUES (" + this.soundData.getLat() + ", " + this.soundData.getLng() + ", " +
+					this.soundData.getSoundLevel() + ")";
 	}
 	
 	private double getDistanceInFeet(double loungeLat, double loungeLng) {
 		
 		final double MILES_TO_FEET = 5280.00;
 		
-		double theta = this.longitude - loungeLng;
-		double dist = Math.sin(deg2rad(this.latitude)) * Math.sin(deg2rad(loungeLat)) + Math.cos(deg2rad(this.latitude)) * Math.cos(deg2rad(loungeLat)) * Math.cos(deg2rad(theta));
+		double theta = this.soundData.getLng() - loungeLng;
+		double dist = Math.sin(deg2rad(this.soundData.getLat())) * Math.sin(deg2rad(loungeLat)) + Math.cos(deg2rad(this.soundData.getLat())) * Math.cos(deg2rad(loungeLat)) * Math.cos(deg2rad(theta));
 		dist = Math.acos(dist);
 		dist = rad2deg(dist);
 		dist = dist * 60 * 1.1515;
@@ -103,6 +103,14 @@ public class QuitetLoungeInputManager {
 	private static double rad2deg(double rad) {
 		return (rad * 180 / Math.PI);
 	}
+
+	/**
+	 * @return the dataUpdateResponse
+	 */
+	public DataUpdateResponse getDataUpdateResponse() {
+		return dataUpdateResponse;
+	}
+	
 	
 	
 

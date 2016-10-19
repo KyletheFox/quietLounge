@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.temple.quietLounge.ResponseObjs;
+package edu.temple.quietLounge.VO;
 
 import java.sql.Timestamp;
 import java.util.Calendar;

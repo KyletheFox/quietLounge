@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 public class Giphy {
-	private String response;
+	//private String response;
 	
 	public Giphy() {
 		RestTemplate gif = new RestTemplate();
