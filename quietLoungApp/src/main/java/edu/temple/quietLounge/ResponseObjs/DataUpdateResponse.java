@@ -13,14 +13,14 @@ import java.util.Date;
 public abstract class DataUpdateResponse {
 	
 	protected Timestamp ts;
-	protected String responseSuccess;
+	protected boolean responseSuccess;
 	protected String msg;
 	
 	public DataUpdateResponse() {
 		createTimestamp();
 	}
 
-	public DataUpdateResponse(String responseSuccess) {
+	public DataUpdateResponse(boolean responseSuccess) {
 		this.responseSuccess = responseSuccess;
 		createTimestamp();
 	}
@@ -31,11 +31,11 @@ public abstract class DataUpdateResponse {
 		this.ts = new Timestamp(now.getTime());
 	}
 
-	public String getResponseSuccess() {
+	public boolean getResponseSuccess() {
 		return responseSuccess;
 	}
 
-	public void setResponseSuccess(String responseSuccess) {
+	public void setResponseSuccess(boolean responseSuccess) {
 		this.responseSuccess = responseSuccess;
 	}
 

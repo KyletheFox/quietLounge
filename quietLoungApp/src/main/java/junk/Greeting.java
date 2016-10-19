@@ -1,4 +1,4 @@
-package edu.temple.quietLounge.VO;
+package junk;
 
 public class Greeting {
 

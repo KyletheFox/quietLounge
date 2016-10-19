@@ -15,7 +15,7 @@ import edu.temple.quietLounge.SQLDatabaseConnection;
 import edu.temple.quietLounge.DAO.LoungeCoordinates;
 import edu.temple.quietLounge.ResponseObjs.DataUpdateResponse;
 import edu.temple.quietLounge.ResponseObjs.SuccessfulDataUpdateResponse;
-import edu.temple.quietLounge.VO.Greeting;
+import junk.Greeting;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -28,23 +28,13 @@ public class QuietLoungeControler {
     private final AtomicLong counter = new AtomicLong();
 	private Log log = LogFactory.getLog(QuietLoungeControler.class);
     
-    // Variable never used. Only called to initalize the db connection singleton
-//    @SuppressWarnings("unused")
-	//private SQLDatabaseConnection dbInstance = SQLDatabaseConnection.getInstance();
-
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-    	// Test
-    	new LoungeCoordinates();
-        
-    	return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+    @RequestMapping("/getLounges")
+    public LoungeCoordinates getLoungeCooridnates() {
+    	return new LoungeCoordinates();
     }
     
     @RequestMapping(value = "/inputSound", method = RequestMethod.POST)
     public DataUpdateResponse addNewSoundData(@RequestParam(value="lat") String lat, @RequestParam(value="lng") String lng, @RequestParam(value="sound") String sound) {
-    	@SuppressWarnings("unused")
-    	SQLDatabaseConnection dbInstance = SQLDatabaseConnection.getInstance();
     	
     	QuitetLoungeInputManager manager = new QuitetLoungeInputManager(Double.parseDouble(lat), Double.parseDouble(lng), Double.parseDouble(sound));
     	return manager.insertNewSoundData();

@@ -46,7 +46,7 @@ public class QuitetLoungeInputManager {
 			tmp = itr.next();
 			
 			double dist = getDistanceInFeet(tmp.getLat(), tmp.getLng());
-			log.info("The distance to " + tmp.getName() + ": " + dist);
+			log.info("The distance to " + tmp.getName() + ": " + String.format("%.2f", dist) + "ft");
 			
 			if(getDistanceInFeet(tmp.getLat(), tmp.getLng()) <= tmp.getAcceptRange()) {
 				log.info("This Location is within range of: " + tmp.getName());
@@ -66,13 +66,13 @@ public class QuitetLoungeInputManager {
 					e.printStackTrace();
 				}
 		        
-				
 				// Return Successful update
 				return new SuccessfulDataUpdateResponse();
 			}
 		}
 		
-		return new FailureDataUpdateResponse();
+		log.info("No Louges Found in Range");
+		return new FailureDataUpdateResponse("Out of Range");
 	}
 	
 	private String insertQueryFactory(Lounge lounge) {

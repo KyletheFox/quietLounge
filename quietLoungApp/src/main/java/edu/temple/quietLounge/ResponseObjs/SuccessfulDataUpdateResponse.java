@@ -3,7 +3,7 @@ package edu.temple.quietLounge.ResponseObjs;
 public class SuccessfulDataUpdateResponse extends DataUpdateResponse {
 
 	public SuccessfulDataUpdateResponse() {
-		super("Success");
+		super(true);
 		// TODO Auto-generated constructor stub
 		this.setMsg("Successful Database Input");
 	}

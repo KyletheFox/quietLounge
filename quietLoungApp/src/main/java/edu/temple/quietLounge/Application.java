@@ -1,5 +1,8 @@
 package edu.temple.quietLounge;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -11,11 +14,12 @@ public class Application extends SpringBootServletInitializer{
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-    
-    @Override
+
+	@Override
     protected SpringApplicationBuilder configure(
                       SpringApplicationBuilder application) {
       return application.sources(Application.class);
     }
+  
 }
 
