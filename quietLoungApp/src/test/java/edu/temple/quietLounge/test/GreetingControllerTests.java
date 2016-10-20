@@ -52,13 +52,24 @@ public class GreetingControllerTests {
 	
 	@Test
 	public void callControllerThatDoesntExist() throws Exception {
-		this.mockMvc.perform(get("/THIS_IS_NO_A_CONTROLLER")).andExpect(status().is4xxClientError());
+		this.mockMvc.perform(get("/THIS_IS_NOT_A_CONTROLLER")).andExpect(status().is4xxClientError());
 	}
 	
 	@Test
 	public void pingShouldRetrunMessage() throws Exception {
 		this.mockMvc.perform(get("/ping")).andDo(print()).andExpect(status().isOk())
 					.andExpect(content().string("ping you"));
+	}
+	
+	@Test
+	public void inputSoundShouldReturnOkStatus() throws Exception {
+		this.mockMvc.perform(post("/inputSound").param("lat", "SHOULD_BE_NUMBER").param("lng", "0").param("sound", "0"))
+		.andExpect(status().isOk());
+	}
+	
+	@Test
+	public void getLoungeDataShouldReturnOkStatus() throws Exception {
+		this.mockMvc.perform(get("/getLoungeData")).andDo(print()).andExpect(status().isOk());
 	}
 	
 	@Test
@@ -79,21 +90,6 @@ public class GreetingControllerTests {
 				.andExpect(status().isOk()).andExpect(jsonPath("$.responseSuccess").value(false));
 	}
 
-//    @Test
-//    public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
-//
-//        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
-//                .andExpect(jsonPath("$.content").value("Hello, World!"));
-//    }
-//
-//    @Test
-//    public void paramGreetingShouldReturnTailoredMessage() throws Exception {
-//
-//        this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
-//                .andDo(print()).andExpect(status().isOk())
-//                .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
-//    }
-    
     @Test
     public void checkDatabaseConnection() throws Exception {
     	String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb";

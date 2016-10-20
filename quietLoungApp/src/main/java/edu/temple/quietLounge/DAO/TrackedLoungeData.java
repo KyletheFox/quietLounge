@@ -33,24 +33,27 @@ public class TrackedLoungeData extends ArrayList<Lounge>{
 		Statement stmt;
 		ResultSet rs;
 		Connection con;
+		SqlQueryStringFactory queryFactory;
 		
 		// Get Database Connection
 		con = SQLDatabaseConnection.getCon();
 				
-		// Query to pull the lounge data
-		String sql = "SELECT * FROM Lounge_List";	
+		// Create Query factory 
+		queryFactory = new SqlQueryStringFactory();	
 		
 		// Run Query
 		try {
-			stmt = con.createStatement();
-			rs = stmt.executeQuery(sql);
 			
+			// Get master lounge table data
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(queryFactory.getSelectAllLoungeDataQuery());
+			
+			// Add query results to the ArrayList (this)
 			while(rs.next()) {
 				this.add(createLounge(rs));
 			}
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 				

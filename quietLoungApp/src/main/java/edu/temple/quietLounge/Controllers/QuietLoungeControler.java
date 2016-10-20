@@ -25,8 +25,7 @@ public class QuietLoungeControler {
     		@RequestParam(value="lng") String lng, @RequestParam(value="sound") String soundLevel) {
     	SoundData soundData = new SoundData(lat, lng, soundLevel);
 		QuitetLoungeInputManager manager = new QuitetLoungeInputManager(soundData);
-		manager.insertNewSoundData();
-		return manager.getDataUpdateResponse();
+		return manager.insertNewSoundData();
     }
     
     @RequestMapping(value = "/ping", method = RequestMethod.GET)

@@ -9,6 +9,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import edu.temple.quietLounge.SQLDatabaseConnection;
+import edu.temple.quietLounge.DAO.SqlQueryStringFactory;
 import edu.temple.quietLounge.DAO.TrackedLoungeData;
 import edu.temple.quietLounge.VO.DataUpdateResponse;
 import edu.temple.quietLounge.VO.FailureDataUpdateResponse;
@@ -34,9 +35,12 @@ public class QuitetLoungeInputManager {
 		this.dataUpdateResponse = null;
 	}
 	
-	public void insertNewSoundData() {
+	public DataUpdateResponse insertNewSoundData() {
 		
 		Lounge tmp;
+		
+		// Create factory to create query statements
+		SqlQueryStringFactory queryFactory = new SqlQueryStringFactory();
 		
 		//get an Iterator object for ArrayList using iterator() method.
 	    Iterator<Lounge> itr = this.loungeCoords.iterator();
@@ -52,7 +56,7 @@ public class QuitetLoungeInputManager {
 				log.info("This Location is within range of: " + tmp.getName());
 				
 				// Enter new data in to corresponding table
-				String sql = insertQueryFactory(tmp);
+				String sql = queryFactory.getInsertSoundDataQuery(tmp.getName(), soundData);
 				Statement stmt = null;
 		        Connection con = SQLDatabaseConnection.getCon();
 		        
@@ -61,24 +65,22 @@ public class QuitetLoungeInputManager {
 					stmt.executeUpdate(sql);
 					log.info("Inserted new Sound data into: " + tmp.getName());
 					
+					sql = queryFactory.getUpdateLoungeListSoundLevels(tmp.getName(), soundData.getSoundLevel());
+					stmt.executeUpdate(sql);
+					log.info("Updated master table with new sound data in Lounge: " + tmp.getName() + " @ " + soundData.getSoundLevel());
+					
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		        
 				// Return Successful update
-				this.dataUpdateResponse = new SuccessfulDataUpdateResponse();
+				return new SuccessfulDataUpdateResponse();
 			}
 		}
 		
 		log.info("No Louges Found in Range");
-		this.dataUpdateResponse = new FailureDataUpdateResponse("Out of Range");
-	}
-	
-	private String insertQueryFactory(Lounge lounge) {
-		return "INSERT INTO " + lounge.getName() + " (Latitude, Longitude, SoundReading) " +
-					"VALUES (" + this.soundData.getLat() + ", " + this.soundData.getLng() + ", " +
-					this.soundData.getSoundLevel() + ")";
+		return new FailureDataUpdateResponse("Out of Range");
 	}
 	
 	private double getDistanceInFeet(double loungeLat, double loungeLng) {
@@ -103,15 +105,4 @@ public class QuitetLoungeInputManager {
 	private static double rad2deg(double rad) {
 		return (rad * 180 / Math.PI);
 	}
-
-	/**
-	 * @return the dataUpdateResponse
-	 */
-	public DataUpdateResponse getDataUpdateResponse() {
-		return dataUpdateResponse;
-	}
-	
-	
-	
-
 }
