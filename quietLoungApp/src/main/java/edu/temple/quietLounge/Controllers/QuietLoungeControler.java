@@ -1,5 +1,6 @@
 package edu.temple.quietLounge.Controllers;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -7,17 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.temple.quietLounge.DAO.TrackedLoungeData;
 import edu.temple.quietLounge.VO.DataUpdateResponse;
-import edu.temple.quietLounge.VO.FailureDataUpdateResponse;
+import edu.temple.quietLounge.VO.Lounge;
+import edu.temple.quietLounge.VO.LoungeListResponse;
 import edu.temple.quietLounge.VO.SoundData;
 import edu.temple.quietLounge.managers.QuitetLoungeInputManager;
-import java.text.ParseException;
+import java.util.ArrayList;
 
+@CrossOrigin
 @RestController
 public class QuietLoungeControler {
     
 	@RequestMapping(value = "/getLoungeData", method = RequestMethod.GET)
-    public TrackedLoungeData getLoungeData() {
-    	return new TrackedLoungeData();
+    public LoungeListResponse getLoungeData() {
+		ArrayList<Lounge> loungeList = new TrackedLoungeData();
+    	return new LoungeListResponse(loungeList);
     }
     
     @RequestMapping(value = "/inputSound", method = RequestMethod.POST)

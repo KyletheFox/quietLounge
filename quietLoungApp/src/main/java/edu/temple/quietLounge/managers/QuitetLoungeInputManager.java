@@ -20,23 +20,24 @@ import edu.temple.quietLounge.VO.SuccessfulDataUpdateResponse;
 public class QuitetLoungeInputManager {
 	
 	private SoundData soundData;
-	private DataUpdateResponse dataUpdateResponse;
 	private TrackedLoungeData loungeCoords;
 	private Log log = LogFactory.getLog(this.getClass());
 	
 	public QuitetLoungeInputManager() {
 		this.loungeCoords = new TrackedLoungeData();
-		this.dataUpdateResponse = null;
 	}
 	
 	public QuitetLoungeInputManager(SoundData soundData) {
 		this.soundData = soundData;
 		this.loungeCoords = new TrackedLoungeData();
-		this.dataUpdateResponse = null;
 	}
 	
 	public DataUpdateResponse insertNewSoundData() {
 		
+		// Return immediately if there is bad data
+		if (this.soundData.badData) {return new FailureDataUpdateResponse("Error in Data: Not in proper formatting");}
+		
+		// Temporary Placeholder
 		Lounge tmp;
 		
 		// Create factory to create query statements
@@ -65,12 +66,11 @@ public class QuitetLoungeInputManager {
 					stmt.executeUpdate(sql);
 					log.info("Inserted new Sound data into: " + tmp.getName());
 					
-					sql = queryFactory.getUpdateLoungeListSoundLevels(tmp.getName(), soundData.getSoundLevel());
+					sql = queryFactory.getUpdateLoungeListSoundLevels(tmp.getName(), soundData);
 					stmt.executeUpdate(sql);
 					log.info("Updated master table with new sound data in Lounge: " + tmp.getName() + " @ " + soundData.getSoundLevel());
 					
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		        

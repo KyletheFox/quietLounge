@@ -23,8 +23,9 @@ public class SqlQueryStringFactory {
 		return "SELECT * FROM Lounge_List";
 	}
 	
-	public String getUpdateLoungeListSoundLevels(String loungeName, double soundLevel) {
-		return "UPDATE Lounge_List SET lastSoundLevel=" + soundLevel + "WHERE name='" + loungeName + "'"; 
+	public String getUpdateLoungeListSoundLevels(String loungeName, SoundData soundData) {
+		return "UPDATE Lounge_List SET lastSoundLevel=" + soundData.getSoundLevel() + ", lastUpdateTime='" + 
+				soundData.getTimeStamp() + "' WHERE name='" + loungeName + "'"; 
 	}
 
 }
