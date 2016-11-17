@@ -6,6 +6,10 @@ import java.util.Date;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+/**
+ * Holds the data for an incoming request to put data into the DB. 
+ *
+ */
 public class SoundData {
 	private double lat;
 	private double lng;

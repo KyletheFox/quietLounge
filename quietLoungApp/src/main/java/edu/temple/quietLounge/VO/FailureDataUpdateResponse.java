@@ -1,5 +1,9 @@
 package edu.temple.quietLounge.VO;
 
+/**
+ * Response to send back to user if the data was not entered into DB
+ *
+ */
 public class FailureDataUpdateResponse extends DataUpdateResponse {
 
 	public FailureDataUpdateResponse() {

@@ -1,7 +1,13 @@
 package edu.temple.quietLounge.VO;
 
+/**
+ * Holds data about each lounge. Used when the lounge data is being returned to
+ * the sender
+ *
+ */
 public class Lounge {
 	
+	// Variables
 	private int id;
 	private String name;
 	private double lat;
@@ -9,6 +15,9 @@ public class Lounge {
 	private double lastSoundLevel;
 	private int acceptRange;
 	
+	/**
+	 * No-arg Constructor
+	 */
 	public Lounge() {
 		this.id = 0;
 		this.name = null;
@@ -18,6 +27,15 @@ public class Lounge {
 		this.acceptRange = 0;
 	}
 	
+	/**
+	 * Constuctor filling in all the values
+	 * @param id
+	 * @param name
+	 * @param lat
+	 * @param lng
+	 * @param lastSoundLevel
+	 * @param acceptRange
+	 */
 	public Lounge(int id, String name, double lat, double lng, double lastSoundLevel, int acceptRange) {
 		this.id = id;
 		this.name = name;
@@ -27,6 +45,8 @@ public class Lounge {
 		this.acceptRange = acceptRange;
 	}
 
+	// Setters and Getters
+	
 	public int getId() {
 		return id;
 	}
