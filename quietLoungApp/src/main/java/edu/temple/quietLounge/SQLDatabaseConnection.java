@@ -8,6 +8,13 @@ import java.sql.SQLException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory; 
 
+/**
+ * This class is a singleton that is designed to create a connection to the
+ * MySQL database I have set up for this project. This connection will be used
+ * to input and output data about the lounges that are currently being 
+ * tracked by the server
+ *
+ */
 public class SQLDatabaseConnection {
 	
 	// Creating only instance
@@ -24,10 +31,17 @@ public class SQLDatabaseConnection {
 	// Create Logger object
 	private Log log = LogFactory.getLog(SQLDatabaseConnection.class);
 	
+	/**
+	 * Private constructor. Outside classes must call public methods to access the
+	 * connection or the instance of this class
+	 */
 	private SQLDatabaseConnection() {
 		connectToDB();
 	}
 	
+	/**
+	 * Attempts to connect to the database server
+	 */
 	private void connectToDB() {
 		try { 
 			DriverManager.registerDriver(new Driver ());
@@ -38,10 +52,18 @@ public class SQLDatabaseConnection {
 		}
 	}
 	
+	/**
+	 * Gets the instance of the DB connection. Only way to get the this object
+	 * @return Instance of the SQLDatabaseConnection Object
+	 */
 	public static SQLDatabaseConnection getInstance() {
 		return instance;
 	}
-
+	
+	/**
+	 * Gets the connection to the database created in this singleton
+	 * @return Connection to the database
+	 */
 	public static Connection getCon() {
 		return con;
 	}

@@ -17,21 +17,42 @@ import edu.temple.quietLounge.VO.Lounge;
 import edu.temple.quietLounge.VO.SoundData;
 import edu.temple.quietLounge.VO.SuccessfulDataUpdateResponse;
 
+/**
+ * Handles the incoming POST request coming into the server. It takes the all
+ * params passed with the POST request to try to insert them into the DB. This
+ * only happens if the location of the incoming sound data is within a certain
+ * distance (ft). THe acceptable range is one of the variables stored in the
+ * DB
+ *
+ */
 public class QuitetLoungeInputManager {
 	
-	private SoundData soundData;
-	private TrackedLoungeData loungeCoords;
-	private Log log = LogFactory.getLog(this.getClass());
+	// Variables
+	private SoundData soundData;							// Holds sound and location info
+	private TrackedLoungeData loungeCoords;					// Holds data about the tracked lounges
+	private Log log = LogFactory.getLog(this.getClass());	// Logger to send info to be stored in log file
 	
+	/**
+	 * No-arg Constructor
+	 */
 	public QuitetLoungeInputManager() {
 		this.loungeCoords = new TrackedLoungeData();
 	}
 	
+	/**
+	 * Constructor that set the location and sound data to enter
+	 * @param soundData - Data to put in DB
+	 */
 	public QuitetLoungeInputManager(SoundData soundData) {
 		this.soundData = soundData;
 		this.loungeCoords = new TrackedLoungeData();
 	}
 	
+	/**
+	 * Create a response to send back to the sender. This method contains all the logic
+	 * for determine whether the sound data will be inserted into the DB
+	 * @return - Response to send back to user
+	 */
 	public DataUpdateResponse insertNewSoundData() {
 		
 		// Return immediately if there is bad data
@@ -83,6 +104,13 @@ public class QuitetLoungeInputManager {
 		return new FailureDataUpdateResponse("Out of Range");
 	}
 	
+	/**
+	 * Returns the distance in feet from the lounge to the current location
+	 * of the sound data
+	 * @param loungeLat - Latitude of lounge
+	 * @param loungeLng - Longitude of lounge
+	 * @return Distance in Ft from the sound data object to the lounge
+	 */
 	private double getDistanceInFeet(double loungeLat, double loungeLng) {
 		
 		final double MILES_TO_FEET = 5280.00;
@@ -96,12 +124,20 @@ public class QuitetLoungeInputManager {
 		return dist;
 	}
 	
-
+	/**
+	 * Converts degrees to radiant
+	 * @param deg - Degree to convert
+	 * @return radiant
+	 */
 	private static double deg2rad(double deg) {
 		return (deg * Math.PI / 180.0);
 	}
 
-
+	/**
+	 * Converts radiants to degrees
+	 * @param rad - The radiant
+	 * @return degrees
+	 */
 	private static double rad2deg(double rad) {
 		return (rad * 180 / Math.PI);
 	}
