@@ -21,9 +21,13 @@ public class SQLDatabaseConnection {
 	private static SQLDatabaseConnection instance = new SQLDatabaseConnection();
 
 	// Database Credentials
-	private static final String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb?autoReconnect=true";
-	private static final String user = "foxy"; 
-	private static final String password = "halobuster1982";
+	public static final String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb?autoReconnect=true";
+	public static final String user = "foxy"; 
+	public static final String password = "halobuster1982";
+	
+//	public static final String url = "jdbc:mysql://localhost:3306/";
+//	public static final String user = "root"; 
+//	public static final String password = "";
 	
 	// The connection to MySQL Database
 	private static Connection con; 

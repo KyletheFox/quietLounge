@@ -45,5 +45,13 @@ public class SqlQueryStringFactory {
 		return "UPDATE Lounge_List SET lastSoundLevel=" + soundData.getSoundLevel() + ", lastUpdateTime='" + 
 				soundData.getTimeStamp() + "' WHERE name='" + loungeName + "'"; 
 	}
+	
+	/**
+	 * Creates query to pull all data from sensor table
+	 * @return SELECT query String
+	 */
+	public static String getAllSensorDataQuery() {
+		return "SELECT * FROM Sensors";
+	}
 
 }

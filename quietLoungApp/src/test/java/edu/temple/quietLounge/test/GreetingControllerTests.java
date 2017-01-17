@@ -88,18 +88,4 @@ public class GreetingControllerTests {
 		this.mockMvc.perform(post("/inputSound").param("lat", "0").param("lng", "0").param("sound", "SHOULD_BE_NUMBER"))
 				.andExpect(status().isOk()).andExpect(jsonPath("$.responseSuccess").value(false));
 	}
-
-    @Test
-    public void checkDatabaseConnection() throws Exception {
-    	String url = "jdbc:mysql://aae49nhnftqu2.cfjstbrfli0s.us-east-1.rds.amazonaws.com:3306/ebdb";
-    	String user = "foxy"; 
-    	String password = "halobuster1982";
-    	Connection con; 
-    	
-    	DriverManager.registerDriver(new Driver ());
-		con = DriverManager.getConnection(url, user, password); 
-		
-		Assert.notNull(con);    	
-    }
-
 }
