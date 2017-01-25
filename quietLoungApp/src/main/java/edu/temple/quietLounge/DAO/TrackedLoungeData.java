@@ -52,9 +52,9 @@ public class TrackedLoungeData extends ArrayList<Lounge>{
 	private void pullAllLoungeCoords() {
 		
 		// Variables
-		Statement stmt;						// The query statement to send to DB
-		ResultSet rs;						// Results from query
-		Connection con;						// Connection to DB
+		Statement stmt = null;						// The query statement to send to DB
+		ResultSet rs = null;						// Results from query
+		Connection con = null;						// Connection to DB
 		SqlQueryStringFactory queryFactory;	// Creates query strings
 		
 		// Get Database Connection
@@ -77,7 +77,24 @@ public class TrackedLoungeData extends ArrayList<Lounge>{
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally {
+		    if (rs != null) {
+		        try {
+		            rs.close();
+		        } catch (SQLException e) { /* ignored */}
+		    }
+		    if (stmt != null) {
+		        try {
+		            stmt.close();
+		        } catch (SQLException e) { /* ignored */}
+		    }
+		    if (con != null) {
+		        try {
+		            con.close();
+		        } catch (SQLException e) { /* ignored */}
+		    }
 		}
+
 				
 	}
 	

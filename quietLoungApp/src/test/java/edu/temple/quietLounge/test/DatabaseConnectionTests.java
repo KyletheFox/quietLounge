@@ -49,7 +49,7 @@ public class DatabaseConnectionTests {
 	
 	@Test
 	public void MakeSureTableExists() throws SQLException{
-		sql = SqlQueryStringFactory.getAllSensorDataQuery();
+		sql = "SELECT * FROM Sensors";
 		stmt = con.createStatement();
 		rs = stmt.executeQuery(sql);
 		Assert.notNull(rs);
