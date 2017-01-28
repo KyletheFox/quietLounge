@@ -25,7 +25,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.Assert;
 
 import com.mysql.jdbc.Driver;
-import com.remotesound.DAO.QueryFactory;
+import com.remotesound.DAO.QueryFactory_NOT_USED;
+import com.remotesound.DAO.RequestLatestSoundData;
+import com.remotesound.Managers.InsertRequestManager;
+import com.remotesound.VO.InsertResponse;
 import com.remotesound.VO.SoundData;
 
 @RunWith(SpringRunner.class)
@@ -36,8 +39,11 @@ public class RemoteSoundApplicationTests {
 	@Autowired
     private MockMvc mockMvc;
 	
-	QueryFactory qF;
+	QueryFactory_NOT_USED qF;
 	SoundData sd;
+	InsertResponse ir;
+	InsertRequestManager requestManager;
+	RequestLatestSoundData soundDataReq;
 	
 	// These values are defined in SQLDatabaseConnection.java
 	private final static String url = SQLDatabaseConnection.url;
@@ -52,17 +58,41 @@ public class RemoteSoundApplicationTests {
 	public void before() {
 		
 	}
+	
+	@BeforeClass
+	public static void setUpDBconnection() throws SQLException {
+		DriverManager.registerDriver(new Driver ());
+		con = DriverManager.getConnection(url, user, password); 
+	}
 
 	@Test
 	public void createQueryFactoryObject() {
-		qF = new QueryFactory();
+		qF = new QueryFactory_NOT_USED();
 		Assert.notNull(qF);
 	}
 	
 	@Test
-	public void createSoundDataObject() {
+	public void CreateSoundDataObject() {
 		sd = new SoundData();
 		Assert.notNull(sd);
+	}
+	
+	@Test
+	public void CreateInsertResponseObject() {
+		ir = new InsertResponse();
+		Assert.notNull(ir);
+	}
+	
+	@Test
+	public void CreateInsertRequestManagerObject() {
+		requestManager = new InsertRequestManager();
+		Assert.notNull(requestManager);
+	}
+	
+	@Test
+	public void CreateRequestLatestSoundDataObject() {
+		soundDataReq = new RequestLatestSoundData();
+		Assert.notNull(soundDataReq);
 	}
 	
 	@Test
@@ -77,15 +107,8 @@ public class RemoteSoundApplicationTests {
 	
 	@Test
 	public void inputSoundStatusOk() throws Exception {
-		this.mockMvc.perform(post("/inputSound").param("id", "ID").param("sound", "SOUND")).andDo(print()).andExpect(status().isOk());
+		this.mockMvc.perform(post("/inputSound").param("id", "ID").param("sound", "SOUND").param("timestamp", "TIME")).andDo(print()).andExpect(status().isOk());
 	}
-	
-	@BeforeClass
-	public static void setUpDBconnection() throws SQLException {
-		DriverManager.registerDriver(new Driver ());
-		con = DriverManager.getConnection(url, user, password); 
-	}
-	
 	
 	@Test
     public void checkDatabaseConnection() throws Exception {
@@ -108,5 +131,7 @@ public class RemoteSoundApplicationTests {
 		rs.next();
 		assertEquals(rs.getString(1), "TEST");
 	}
+	
+	
 
 }

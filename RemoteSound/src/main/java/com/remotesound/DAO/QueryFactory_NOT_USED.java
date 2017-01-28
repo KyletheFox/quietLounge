@@ -7,12 +7,12 @@ package com.remotesound.DAO;
  * @author TheFoxx
  *
  */
-public class QueryFactory {
+public class QueryFactory_NOT_USED {
 	
 	String query;
 	StringBuilder sb;
 	
-	public QueryFactory() {
+	public QueryFactory_NOT_USED() {
 		sb = new StringBuilder();
 	}
 	

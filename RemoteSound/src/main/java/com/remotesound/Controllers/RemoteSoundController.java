@@ -39,8 +39,8 @@ public class RemoteSoundController {
 	 * POST request to enter data into dbs
 	 */
 	 @RequestMapping(value = "/inputSound", method = RequestMethod.POST)
-	 public String addNewSoundData(@RequestParam(value="id") String deviceId, @RequestParam(value="sound") String soundLevel) {
-		 
+	 public String addNewSoundData(@RequestParam(value="id") String deviceId, @RequestParam(value="sound") String soundLevel, 
+			 @RequestParam(value="timestamp") String timestamp) {
 		 return "You sent me data...";
 	 }
 	
